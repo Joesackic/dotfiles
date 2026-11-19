@@ -1,0 +1,110 @@
+@define-color bg-color rgba(30, 30, 30, 0.5);
+@define-color border-color transparent;
+@define-color selected-bg-color rgba(120, 120, 120, 0.5);
+@define-color selected-border-color #313244;
+@define-color text-color #282224;
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 16px;
+    font-family: "Jetbrains Nerd Font";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background: blanchedalmond;
+    background-color: rgba(255, 235, 205, 0.8); 
+    color: @text-color;
+}
+
+window.taskbar#waybar {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 4px;
+    border: 0px;
+    box-shadow: none;
+}
+
+.modules-center:hover,
+.modules-right:hover {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+#workspaces,
+#window,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery{
+    margin-left: 5px;
+}
+
+#clock,
+#tray {
+    padding: 0 0px;
+    margin: 0 0px;
+    color: @text-color;
+}
+
+#window {
+    color: @text-color;
+}
+
+#workspaces {
+    margin-right: 3px;
+    border-radius: 4px;
+}
+
+#workspaces button {
+    background: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: red;
+    color: @text-color;
+}
+
+#workspaces button.active {
+    /*background-color: silver;*/
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover {
+    background-color: @selected-bg-color;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#battery.warning {
+    color: #f9e2af;
+    background: transparent;
+}
+
+#battery.critical {
+    color: #f38ba8;
+    background: transparent;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: green;
+    background: transparent;
+}
+
+#tray {
+    padding: 0 10px;
+}
