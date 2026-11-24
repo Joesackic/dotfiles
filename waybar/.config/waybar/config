@@ -163,9 +163,9 @@
   },
 
   "clock#time": {
-    "format": "  {:%I:%M %p}",
+    "format": "  {:%H:%M}",
     "tooltip": false,
-    "tooltip-format": "Standard Time: {:%I:%M %p}"
+    "tooltip-format": "Standard Time: {:%H:%M}"
   },
 
   "clock#date": {
