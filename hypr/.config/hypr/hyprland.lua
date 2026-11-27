@@ -2,17 +2,6 @@
 -- Converted from hyprland.conf for Hyprland 0.55+
 -- Docs: https://wiki.hypr.land/Configuring/Start/
 
-------------------
----- MONITORS ----
-------------------
-
-hl.monitor({
-    output   = "",
-    mode     = "preferred",
-    position = "auto",
-    scale    = 1.25,
-})
-
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
